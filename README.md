@@ -2,7 +2,7 @@
 
 A fullstack mini forum/blog built with **Nuxt 3**, **TypeScript**, **PostgreSQL**, and **Prisma**.
 
-_The Debug Chronicles_ is a personal project designed to explore how to build a modern, full-featured web app from scratch. It includes user authentication, post creation, commenting, and relational data management — all wrapped in a clean, responsive UI.
+_The Debug Chronicles_ is a personal project by [Michael Torres](https://www.linkedin.com/in/michaeltorresdev/) designed to explore how to build a modern, full-featured web app from scratch. It includes user authentication, post creation, commenting, and relational data management — all wrapped in a clean, responsive UI.
 
 ## 🚀 Tech Stack
 
