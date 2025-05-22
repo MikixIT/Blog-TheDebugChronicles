@@ -8,7 +8,7 @@ _The Debug Chronicles_ is a personal project by [Michael Torres](https://www.lin
 
 - **Frontend**: Nuxt 3, TypeScript, TailwindCSS
 - **Backend**: Nuxt Server Routes (API)
-- **Database**: PostgreSQL
+- **Database**: PostgreSQL with Supabase
 - **Authentication**: Basic session & cookie-based auth
 
 ## ✨ Features
