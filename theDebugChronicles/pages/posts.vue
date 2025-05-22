@@ -1,30 +1,18 @@
 <template>
   <div class="posts-page">
-    <h1 class="title">All the Post</h1>
-    <div class="posts-container">
-      <PostCard v-for="post in posts" :key="post.id" :post="post" />
+    <h1 class="title">All the Posts</h1>
+    <div v-if="pending">Loading...</div>
+    <div v-else-if="error">Error Loading Post.</div>
+    <div v-else class="posts-container">
+      <PostCard v-for="post in posts ?? []" :key="post.id" :post="post" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const posts = [
-  {
-    id: 1,
-    title: "Understanding Vue 3",
-    excerpt: "A quick guide to Vue 3 basics.",
-  },
-  {
-    id: 2,
-    title: "Nuxt 3 Features",
-    excerpt: "Explore the new features in Nuxt 3.",
-  },
-  {
-    id: 3,
-    title: "CSS Tricks",
-    excerpt: "Tips for writing clean and efficient CSS.",
-  },
-];
+import type { Post } from "~/types/post";
+
+const { data: posts, pending, error } = await useFetch<Post[]>("/api/post");
 </script>
 
 <style scoped>

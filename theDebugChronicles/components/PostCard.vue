@@ -2,7 +2,8 @@
   <div class="post-card">
     <h2 class="post-title">{{ post.title }}</h2>
     <p class="post-excerpt">{{ post.excerpt }}</p>
-    <NuxtLink :to="`/posts/${post.id}`" class="read-more">Read More</NuxtLink>
+    <p class=""></p>
+    <NuxtLink :to="`/post/${post.id}`" class="read-more">Read More</NuxtLink>
   </div>
 </template>
 
@@ -35,6 +36,11 @@ defineProps<{
   color: #ccc;
 }
 
+.post-author {
+  font-size: 0.875rem;
+  margin-bottom: 0.2rem;
+  color: #aaa;
+}
 .read-more {
   text-decoration: none;
   color: #00bcd4;
